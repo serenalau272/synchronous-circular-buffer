@@ -23,10 +23,6 @@ public class CircularBuffer {
         m_Buffer = new Object[MAX_SIZE];
     }
 
-    public void CircularBufferDestructor() {
-
-    }
-
     public void push(Object val) throws InterruptedException {
         // lock access to buffer
         m_Mutex.lock();
